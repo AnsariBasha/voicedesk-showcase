@@ -41,6 +41,8 @@ The current offline suite passes **28 tests**, covering ticket contracts, read-o
 
 The author has reported a successful local browser conversation. This is separate from automated microphone or browser verification.
 
+The unchanged agent was also deployed to **LiveKit Cloud in Frankfurt (`eu-central`)**. A hosted RTC text-input check created a fictional ticket after review/approval, then a fresh conversation independently retrieved that saved ticket by employee ID. Both jobs were verified against the intended hosted agent. This establishes the demo's create/read flow, not durability after container replacement or a human microphone test of the hosted version.
+
 The current storage is SQLite. A LiveKit Cloud deployment can be used as a disposable demo; container-local ticket files are not durable or shared across instances. A persistent external database is a separate enhancement. Fictional employee IDs group records and do not authenticate callers.
 
 There is no real password reset, ITSM integration, engineer assignment or ticket-resolution workflow. Provider fallback is configured; independent outage-recovery testing is not claimed.
